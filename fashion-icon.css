@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #edded3;
+   
+   
+}
+body
+    
+{   
+    width: 100%;
+    background-color: #54392a;
+    
+}
+
+ul{ padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li{ 
+   list-style: none; 
+   padding: 10px;
+}
+ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    transition: .5s;
+}
+ul:hover li a{
+    opacity: .5;
+}
+ul li a:hover{
+    background-color: #321b1d;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+    color: #edded3;
+}
+
+header{
+    
+    width: 100%;
+    height: 30%
+
+}
+header h2 {
+    margin: 20px auto;
+    padding: 20px;
+    height: 20%;
+    text-align: center;
+    font-size: 50px ;
+}
+.intro{
+    height:30% ;
+    display: flex;
+   
+}
+.intro .text{
+
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    text-align: start;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-size: 20px;
+    height: 50%;
+}
+.intro .img{
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    
+
+.intro img {
+    width: 90%;
+    height: 380px;
+    border-radius: 10px;
+}
+.text h3{
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    color: #54392a;
+}
+section .text{
+    background-color: #edded3;
+    padding: 20px;
+    text-align: start;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-size: 20px;
+    height: 50%;
+}
+section p{
+    color: #54392a;
+}
+.carousel{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 10px;
+    /* display: flex;
+    */
+
+}
+.slider{
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;  
+   
+}
+.slide{
+    display: flex;
+}
+.card img{
+    flex: 0 0 auto;
+    width: 200px ;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border-radius: 20px;
+margin: 10px;}
+
+
+@keyframes scroll{
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-50%);
+}
+}
+.carousel :hover .card
+{
+    
+    filter: grayscale(1);
+}
+.carousel .card:hover{
+    filter: grayscale(0);
+}
+
+footer{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 15px;
+}
+footer p{
+    margin: 5px auto;
+}
+footer button, footer button a{
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #edded3;
+    color: #54392a;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
