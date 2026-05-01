@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="body">
+    <header><img src="fashs1.09 AM.괕翼" width="50px" alt="">
+        <h1>velvet heritage</h1>
+    </header>
+        <nav >
+            <ul class="ul" id="ul">
+                <li><a href="home.html"><i class="fa-solid fa-house"></i> home</a></li>
+                <li><a href="about us.html"><i class="fa-solid fa-user"></i> about us</a></li>
+                <li><a href="fashion eras.html"><i class="fa-solid fa-hourglass-half"></i> fashion eras</a></li>
+                <li><a href="fashion-icon"><i class="fa-solid fa-crown"></i> fashion icon</a></li>
+                <li><a href="post-war.html"><i class="fa-solid fa-hat-cowboy"></i> post-war fashion</a></li>
+                <li><a href="trend-revival.html"><i class="fa-solid fa-clock-rotate-left"></i> trends revival</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> contact</a></li>
+            </ul>
+        </nav>
+<script>
+            function layout(){
+                let x=document.getElementById("ul");
+                x.classList.add("ul1");
+                x.classList.remove("ul");
+                let a = document.getElementById("layout");
+                let b = document.getElementById("layout1");
+                a.classList.add("mod");
+                b.classList.remove("mod");
+                localStorage.setItem("lay","layout1");
+            }
+            function layout1(){
+                let x=document.getElementById("ul");
+                x.classList.remove("ul1");
+                x.classList.add("ul");
+                let a = document.getElementById("layout");
+                let b = document.getElementById("layout1");
+                a.classList.remove("mod");
+                b.classList.add("mod");
+                localStorage.setItem("lay","layout");
+            }
+            window.onload=function(){
+            let save=localStorage.getItem("lay");
+            if (save === "layout")
+            {
+                layout();
+            }
+            else{
+                layout1();
+            }
+        }
+</script>
+        <div onclick="layout()" id="layout"><i class="fa-solid fa-table-cells-large"></i></div>
+        <div onclick="layout1()" id="layout1" class="mod"><i class="fa-solid fa-table-cells-large"></i></div>
+    <script>
+        function lmode() {
+            document.body.classList.add("lightmode");
+            document.body.classList.remove("body");
+            let x = document.getElementById("lmode");
+            let y = document.getElementById("dmode");
+            x.classList.add("mod");
+            y.classList.remove("mod");
+            localStorage.setItem("mode","lightmode");
+        }
+        function dmode() {
+            document.body.classList.add("body");
+            document.body.classList.remove("lightmode");
+            let y = document.getElementById("lmode");
+            let x = document.getElementById("dmode");
+            x.classList.add("mod");
+            y.classList.remove("mod");
+            localStorage.setItem("mode","body");
+        }
+        window.onload=function(){
+            let save=localStorage.getItem("mode");
+            if (save === "body")
+            {
+                dmode();
+            }
+            else{
+                lmode();
+            }
+
+        }
+    </script>
+    <div id="lmode" onclick="lmode()">☀️</div>
+    <div id="dmode" onclick="dmode()" class="mod">🌙</div>
+    <script>
+        function logout() {
+            let msg = document.getElementById("mess");
+            msg.classList.remove("hidden");
+            msg.classList.add("show");
+
+            setTimeout(function () {
+                window.location.href = "signin.html";
+            }, 2000);
+        }
+    </script>
+    <div class="logout" onclick="logout()">
+        <a href="#"><i class="fa-solid fa-door-open"></i></a>
+    </div>
+    <div id="mess" class="hidden">you are now logged out </div>
+     <div id="s"><i class="fa-solid fa-search" id="icon"></i></div>
+     <div id="sr"><input type="text" class="in" id="searchInput"></div>
+     <div id="bigr"><div id="results"></div></div>
+<script>
+  const pages = [
+    { name: "Home", url: "home.html" },
+    { name: "About", url: "about us.html" },
+    { name: "fashion icon", url: "fashion icon.html" },
+    { name: "fashion eras", url: "fashion eras.html" },
+    { name: "post-war fashion", url: "post-war fashion.html" },
+    { name: "trends-revival", url: "trends-revival.html" },
+    { name: "signin", url: "signin.html" },
+    { name: "Contact", url: "contact.html" },
+  ];
+
+  const input = document.getElementById("searchInput");
+  const resultsDiv = document.getElementById("results");
+
+  input.addEventListener("input", function () {
+    const query = input.value.toLowerCase();
+    resultsDiv.innerHTML = "";
+
+    const filtered = pages.filter(page =>
+      page.name.toLowerCase().includes(query)
+    );
+
+    filtered.forEach(page => {
+      const div = document.createElement("div");
+      div.classList.add("result");
+      div.textContent = page.name;
+
+      div.onclick = () => {
+        window.location.href = page.url;
+      };
+
+      resultsDiv.appendChild(div);
+    });
+  });
+</script>
+    <main>
+        <p>from the past to your wadrobe</p>
+        <h1 id="h1">when fashion meets history</h1>
+        <p>a place where we combine fashion and history</p>
+    </main>
+    <button type="submit" id="bt"><a href="signin.html">sign in</a></button>
+    <footer>
+        <p>©️ 2026 Velvet Heritage Magazine. All Rights Reserved.
+            [Privacy Policy] [Terms of Service] [Cookies]</p>
+        <footer>
+</body>
+
+</html>
