@@ -8,7 +8,7 @@ if (savedTheme === "light") {
   document.body.classList.remove("light"); 
 }
 
-button.onclick = function () {
+button.onclick = function(){
   document.body.classList.toggle("light");
 
   if (document.body.classList.contains("light")) {

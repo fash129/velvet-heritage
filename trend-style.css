@@ -2,56 +2,31 @@
 body{
     
     background-color:  #422c2a;
-    color: #ebded5;
+    color: #edded3;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'sans-serif'; 
-    
-    
+    box-sizing: border-box; 
 }
-
-
 body.light {
-background-color: #ebded5;
+background-color: #edded3;
     color: #30201f;
-
 }
-.logo-box{
-    
-    border-radius: 10px;
+.fa-solid{
+    background-color: transparent;
+    color: #edded3;
 }
-.logout{
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    transition: .6s;
-    padding: 5px;
-
-}
-.logout:hover{
-    background-color:#ebded5;
-    border-radius: 20px;
-}
-
 header{
     text-align: center;
-    padding: 10px;
-    font-family: playfair ;
-    font-style: 'Instrument Serif', serif; 
     transition: 1s;
     width: fit-content;
     margin: auto;
     text-transform:uppercase;
-    letter-spacing:2px;
-    margin-bottom: 30px;
-    
-    
+    letter-spacing:2px; 
 }
 header:hover{
     rotate:y 360deg;
 }
-ul{
+.headerul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,26 +34,26 @@ ul{
     font-size: larger;
     box-shadow: 0px 0px 10px #ebded5;
 }
-ul li{ 
+.headerul li{ 
     list-style: none; 
     padding: 10px;
 }
-ul li a{
+.headerul li a{
     text-decoration: none;
     transition: .5s;
-    color: #ebded5;
+    color: #edded3;
 }
-ul:hover li a{
+.headerul:hover li a{
     opacity: .5;
 }
-ul li a:hover{
+.headerul li a:hover{
     background-color: #ebded5;
     padding: 10px;
     border-radius: 20px;
     opacity: 1;
     color: #321b1d;
 }
-ul li a:after{
+.headerul li a:after{
 color: #321b1d;
 }
 .title{
@@ -121,7 +96,6 @@ h3{
 }
 p{
     font-size: larger;
-    
 }
 .container{
     display: flex;
@@ -142,10 +116,8 @@ p{
     width: 920px;
     border: 4px solid #ebded5;
     border-radius: 50px;
-    box-shadow: 0px 0px 15px  #ebded5;
-    
+    box-shadow: 0px 0px 15px  #ebded5; 
 }
-
 .trend{
     
     display: flex;
@@ -204,37 +176,62 @@ font-weight: bold;
 box-shadow: 8px 8px 25px #ebded5;
 
 }
-footer{
-    height: 90px;
+
+
+.cpy{
     text-align: center;
-    box-shadow:0px 0px 10px #ebded5;
-    padding: 65px;
-    margin-top: 110px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid  #321b1d;
+    font-size: 15px;
+    color: #edded3;
+    letter-spacing: 2px;
     font-size: small;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-    
-    
 }
 
+
+.cookies{ 
+    text-align: center;
+    font-size: 15px;
+    color: #edded3c4;
+}
+.foot{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding-bottom:30px;
+}
+.foot li a{
+    color: #ebded5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.foot:hover li a{
+    opacity: .5;
+}
+.foot li a:hover{
+    background-color: #321b1d;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+    color: white;
+}
 body.light {
 background-color: #ebded5;
     color: #30201f;
 
 }
-body.light.logout:hover{
-    background-color:#321b1d;
-    border-radius: 20px;
-}
-body.light ul a{
+
+body.light .headerul a{
     color: #321b1d;
 }
-body.light ul{
+body.light .headerul{
 box-shadow: 0px 0px 10px #321b1d;
 }
-body.light ul li a:hover{
+body.light .headerul a:hover{
     background-color:#30201f;
     color: white;
 }
@@ -282,6 +279,20 @@ box-shadow: 10px 10px 30px #30201f;
 }
 body.light footer{
     box-shadow:0px 0px 10px #30201f;
+}
+body.light p{
+    color: #321b1d;
+}
+body.light .foot li a:hover{
+    background-color:#30201f;
+    color: #ebded5;
+}
+body.light .foot li a{
+    color: #30201f;  
+}
+body.light .fa-solid{
+    background-color: transparent;
+    color: #321b1d;
 }
 
 
