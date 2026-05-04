@@ -61,8 +61,7 @@ body.light .era-card {
 }
 body.light h1, 
 body.light h2, 
-body.light p, 
-body.light a {
+body.light p {
     color: #54392a !important;
 }
 
