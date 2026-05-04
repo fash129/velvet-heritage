@@ -20,6 +20,10 @@ body{
     background-attachment:fixed ;
     text-shadow: 5px 5px 5px #402615;
 }
+#themetoggle {
+    color: inherit;
+    background-color: transparent;
+}
 .light{
     background-image: url("fash6.jpg");
     color: #461615;
@@ -54,8 +58,7 @@ header:hover{
     margin-top: 40px;
     position: absolute;
     left: 2%;
-}
-ul{
+}.ul{
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -65,21 +68,53 @@ ul{
     width: fit-content;
     float: inline-start;
 } 
-ul li{ 
+.ul1 li{ 
    list-style: none; 
    padding: 10px;
 }
-ul li a{
+.ul1 li a{
     text-decoration: none;
     transition: .5s;
     color: inherit;
     padding: 5px;
     font-weight: bold;
 }
-ul:hover li a{
+.ul1:hover li a{
     opacity: .5;
 }
-ul li a:hover{
+.ul1 li a:hover{
+    background-color:#927355;
+    border-radius: 20px;
+    opacity: 1;
+    color: white;
+    scale: 1.2;
+    box-shadow: 3px 3px 5px 1px #5d4733;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    animation: nav 1s forwards;
+    width: fit-content;
+    float: inline-start;
+} 
+.ul li{ 
+   list-style: none; 
+   padding: 10px;
+}
+.ul li a{
+    text-decoration: none;
+    transition: .5s;
+    color: inherit;
+    padding: 5px;
+    font-weight: bold;
+}
+.ul:hover li a{
+    opacity: .5;
+}
+.ul li a:hover{
     background-color:#927355;
     border-radius: 20px;
     opacity: 1;
@@ -184,7 +219,7 @@ ul li a:hover{
 }
 #layout{
     position:absolute;
-    top: 4%;
+    top: 3%;
     right: 10%;
     padding: 5px;
     transition: .5s;
@@ -314,5 +349,55 @@ footer{
         bottom: 10px;
     }
     
+}
+.cpy {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color); 
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--text-color) !important;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.cookies { 
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.8;
+    transition: color 0.3s ease;
+}
+.cookies a, 
+.cpy a, 
+.foot li a {
+    color: var(--text-color) !important; 
+    text-decoration: none !important;
+    font-size:16px;
+    padding: 6px 15px;
+    border-radius:20px;
+    transition: all 0.3s ease;
+}
+
+.cookies a:hover, 
+.cpy a:hover, 
+.foot li a:hover {
+    background-color: #321b1d !important;
+    color: #edded3 !important; 
+    opacity: 1 !important;
+
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    gap:20px;
+}
+
+.foot li {
+    display: inline-block;
 }
 
