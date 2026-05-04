@@ -20,6 +20,33 @@ if (document.body.classList.contains("light") ) {
 
 
 
+const icon =document.getElementById('themeicon');
+const themebtn=document.getElementById('themetoggle');
+const savedtheme=localStorage.getItem('theme');
+if (savedtheme === 'dark' ){
+    document.body.classList.add('body');
+    icon.classList.replace('fa-moon','fa-sun');
+}
+
+themebtn.addEventListener('click',()=>{
+    document.body.classList.toggle('body');
+    let theme ='light';
+    if(document.body.classList.contains('body')){
+        icon.classList.replace('fa-moon','fa-sun');
+        theme='dark';
+    }
+    else{
+        icon.classList.replace('fa-sun','fa-moon');
+        icon.style.color=="";
+        theme='light';
+    }
+    localStorage.setItem('theme',theme)
+})
+
+
+
+
+
 
 
 //   for(let i = 0; i< slide.length ;i++){
