@@ -12,7 +12,7 @@
 }
 
 /* ── Light Theme ── */
-[data-theme="light"] {
+[data-theme="light"],body.light {
     --bg-color:      #edded3;
     --text-color:    #54392a;
     --shadow:        #54392a;
