@@ -12,36 +12,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body #fashionicon>
-    
-           <header><div hidden><button id="themetoggle" ><i class="fa-solid fa-sun" id="themeicon"></i></button></div><img src="fashs1.09 AM.괕翼" width="100px" >
-        <h1>VELVET HERITAGE</h1>
-    
+<body class="light">
+    <header>
+        <img src="fashs1.09 AM.괕翼" width="100px" alt="">
+        <h1>
+            VELVET HERITAGE
+        </h1>
     </header>
         <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
-                <li><a href="about-us.html"><i class="fa-solid fa-user"></i> about us</a></li>
-                <li><a href="fashion-icon.html"><i class="fa-solid fa-crown"></i> fashion icon</a></li>
-                <li><a href="fashion_eras.html"><i class="fa-solid fa-hourglass-half"></i> fashion eras</a></li>
-                <li><a href="aura-lifestyle.html"><i class="fa-solid fa-hat-cowboy"></i> aura-lifestyle</a></li>
-                <li><a href="trend-revival.html"><i class="fa-solid fa-clock-rotate-left"></i> trends revival</a></li>
+            <ul class="headerul">
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> home</a></li>
+                <li><a href="about us.html"><i class="fa-solid fa-user"></i> about us</a></li>
+                <li><a href="./fashion-icon.html"><i class="fa-solid fa-crown"></i> fashion icon</a></li>
+                <li><a href="fashion_eras.html"><i class="fa-solid fa-hourglass-half"></i> fashion through ages</a></li>
+                <li><a href="aura-lifestyle""><i class="fa-solid fa-hat-cowboy"></i> aura lifestyle </a></li>
+                <li><a href="trend-revival.html"><i class="fa-solid fa-clock"></i> trends revival</a></li>
                 <li><a href="contact-us.html"><i class="fa-solid fa-phone"></i> contact</a></li>
-                <li><a href="magazines.html"><i class="fa-solid fa-book"></i> gallery</a></li>
+                <li><a href="./magazines.html"><i class="fa-solid fa-book"></i> gallery </a></li>
+            <li> <button id="theme-switch" ><i class="fa-solid fa-sun"></i></button></li>
             </ul>
-           </nav>
-        
+    
+        </nav>
+        <h2  >Fashion Icons</h2>
         <div class="intro">
             <div class="text">
-                <h2  class="h2">Fashion Icons</h2>
                 <p>
                     Throughout the ages, female fashion icons have defined the contours of elegance and beauty. It was never just about the dresses, but an expression of personality, power, and a uniqueness that time cannot erase. From Coco Chanel to Audrey Hepburn, their touch remains a source of inspiration for every generation seeking distinction.
                     True elegance is that which defies time. In this section, we highlight the women who redefined the concept of fashion, transforming it from mere clothing into timeless masterpieces. These icons did not follow trends; they created them, leaving their mark permanently engraved in the history of global design.
                 </p></div>
             <div class="img">
-                <img src="2-2.jpg" alt="an image for Marilyn">
+                <img src="2-7.png" alt="an image for Marilyn">
             </div>
         </div>
+    
     
     
 
@@ -49,16 +52,50 @@
         <div class="container">
         </div>
 </div>
-    
+<footer >
+    <div class="cpy">
+        <p>&copy; 2026 Velvet Heritage magazine. All Right Reserved </p>
+    </div>
+    <div class="cookies">
+        <ul class="foot">
+            <li><a href ="#">Privacy Policy</a></li>
+            <li><a href ="#">Terms of Service</a></li>
+            <li><a href ="#">Cookies</a></li>
+        </ul>
+    </div>
+</footer>
     <script src="data.js"></script>
     <script src="function.js"></script>
-    <script src="index.js"></script>
+    <script src="theme.js"></script>
+   
+    <script >
+        for(let i = 0; i< slide.length ;i++){
+    let carouselEle = document.querySelector(".carousel");
+    console.log(slide[i]);
+
+    console.log( showimage(slide[i].images));
+
+
+    carouselEle.innerHTML += `
+    <div class="container">
+<section>
+    <div class="text">
+    <h3>${slide[i].name}</h3>
+        <p>${slide[i].text}</p>
+        </div>
+</section>
+    <div class="slide">
+    <div class="slider">
+    ${showimage(slide[i].images)}
+    </div>
+    <div aria-hidden="" class="slider">
+    ${showimage(slide[i].images)}
+
+    </div>
+    </div>
+    </div>`;
+};
+    </script>
 </body>
-<footer>
-    <p>
-        Copyright: © 2026 Fashion Icons Gallery. All Rights Reserved.</p>
-        <p> Designer Credit: Designed with passion for timeless style.</p>
-    
-    <button type="submit"><a href="sign-in.html">sign in</a></button>
-   </footer>
+
 </html>
