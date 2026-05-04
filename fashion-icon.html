@@ -12,20 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body #fashionicon>
-    <header> 
+<body class="light">
+    <header>
+        <img src="fashs1.09 AM.괕翼" width="100px" alt="">
+        <h1>
+            VELVET HERITAGE
+        </h1>
+    </header>
         <nav>
-            <ul>
+            <ul class="headerul">
                 <li><a href="./index.html"><i class="fa-solid fa-house"></i> home</a></li>
-                <li><a href="about-us.html"><i class="fa-solid fa-user"></i> about us</a></li>
+                <li><a href="about us.html"><i class="fa-solid fa-user"></i> about us</a></li>
                 <li><a href="./fashion-icon.html"><i class="fa-solid fa-crown"></i> fashion icon</a></li>
-                <li><a href="fashion_eras.html"><i class="fa-solid fa-hourglass-half"></i> fashion eras</a></li>
-                <li><a href="aura-lifestyle.html"><i class="fa-solid fa-hat-cowboy"></i> aura lifestyle</a></li>
-                <li><a href="trend-revival.html"><i class="fa-solid fa-clock-rotate-left"></i> trends revival</a></li>
+                <li><a href="fashion_eras.html"><i class="fa-solid fa-hourglass-half"></i> fashion through ages</a></li>
+                <li><a href="aura-lifestyle""><i class="fa-solid fa-hat-cowboy"></i> aura lifestyle </a></li>
+                <li><a href="trend-revival.html"><i class="fa-solid fa-clock"></i> trends revival</a></li>
                 <li><a href="contact-us.html"><i class="fa-solid fa-phone"></i> contact</a></li>
-                <li><a href="magazines.html"><i class="fa-solid fa-book"></i> gallery </a></li> 
+                <li><a href="./magazines.html"><i class="fa-solid fa-book"></i> gallery </a></li>
             </ul>
-           </nav>
+        
+        </nav>
         <h2  >Fashion Icons</h2>
         <div class="intro">
             <div class="text">
@@ -34,36 +40,61 @@
                     True elegance is that which defies time. In this section, we highlight the women who redefined the concept of fashion, transforming it from mere clothing into timeless masterpieces. These icons did not follow trends; they created them, leaving their mark permanently engraved in the history of global design.
                 </p></div>
             <div class="img">
-                <img src="2-2.jpg" alt="an image for Marilyn">
+                <img src="2-7.png" alt="an image for Marilyn">
             </div>
         </div>
     
-    </header>
+    
     
 
     <div class="carousel">
         <div class="container">
         </div>
 </div>
-    
-    <script src="data.js"></script>
-    <script src="function.js"></script>
-    <script src="index.js"></script>
-</body>
 <footer >
     <div class="cpy">
-   ©️ 2026 Velvet Heritage Magazine. All Rights Reserved.
-   
-    </div> 
-    
-    <div class="cookies">
-          <nav>
-        <ul class="foot">
-            <li><a href="#"> Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
-          </nav>
+        <p>&copy; 2026 Velvet Heritage magazine. All Right Reserved </p>
     </div>
-    </footer>
+    <div class="cookies">
+        <ul class="foot">
+            <li><a href ="#">Privacy Policy</a></li>
+            <li><a href ="#">Terms of Service</a></li>
+            <li><a href ="#">Cookies</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="data.js"></script>
+    <script src="function.js"></script>
+    <script src="fashionicon.js"></script>
+   
+    <script >
+        for(let i = 0; i< slide.length ;i++){
+    let carouselEle = document.querySelector(".carousel");
+    console.log(slide[i]);
+
+    console.log( showimage(slide[i].images));
+
+
+    carouselEle.innerHTML += `
+    <div class="container">
+<section>
+    <div class="text">
+    <h3>${slide[i].name}</h3>
+        <p>${slide[i].text}</p>
+        </div>
+</section>
+    <div class="slide">
+    <div class="slider">
+    ${showimage(slide[i].images)}
+    </div>
+    <div aria-hidden="" class="slider">
+    ${showimage(slide[i].images)}
+
+    </div>
+    </div>
+    </div>`;
+};
+    </script>
+</body>
+
 </html>
