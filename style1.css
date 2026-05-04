@@ -40,33 +40,33 @@ body.light {
     color: white;
 }
 
-body.dark-theme {
+body.dark {
     background-color:#edded3;
     color:#54392a ; 
 }
 
-body.dark-theme * {
+body.dark * {
     color: #54392a; 
 }
 
-body.dark-theme .era-section {
+body.dark .era-section {
     border-color: #54392a; 
     box-shadow: 0 0 25px 2px  rgb(43, 29, 21);
 }
 
-body.dark-theme .era-card {
+body.dark .era-card {
     border-color:#54392a;
     box-shadow: 0 0 25px 2px  rgb(43, 29, 21);
 }
 
-body.dark-theme ul li a:hover {
+body.dark ul li a:hover {
     background-color:  #321b1d;
     color: white;
 }
 #theme-icon {
     transition: transform 0.4s ease;}
 
-body.dark-theme #theme-toggle i {
+body.dark #theme-toggle i {
     transform: scale(1.1) rotate(10deg); 
 }
 header:hover{
