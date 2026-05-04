@@ -33,42 +33,42 @@ window.addEventListener('scroll', () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
     
-    const savedTheme = localStorage.getItem("selectedTheme");
+//     const savedTheme = localStorage.getItem("selectedTheme");
 
-    if (savedTheme === "scend-theme") {
+//     if (savedTheme === "scend-theme") {
        
-        document.body.classList.add(savedTheme);
-    } else {
+//         document.body.classList.add(savedTheme);
+//     } else {
         
-        document.body.classList.remove('scend-theme');
-        localStorage.setItem("selectedTheme", ""); 
-    }
-});
+//         document.body.classList.remove('scend-theme');
+//         localStorage.setItem("selectedTheme", ""); 
+//     }
+// });
 
 
-function toggleTheme() {
-    const body = document.body;
+// function toggleTheme() {
+//     const body = document.body;
 
-    if (body.classList.contains('scend-theme')) {
-        body.classList.remove('scend-theme');
-        localStorage.setItem("selectedTheme", ""); 
-    } else {
-        body.classList.add('scend-theme');
-        localStorage.setItem("selectedTheme", "scend-theme"); 
-    }
-}
-
-
+//     if (body.classList.contains('scend-theme')) {
+//         body.classList.remove('scend-theme');
+//         localStorage.setItem("selectedTheme", ""); 
+//     } else {
+//         body.classList.add('scend-theme');
+//         localStorage.setItem("selectedTheme", "scend-theme"); 
+//     }
+// }
 
 
-function toggleTheme() {
-    const body = document.body;
+
+
+// function toggleTheme() {
+//     const body = document.body;
    
-    if (body.classList.contains('scend-theme')) {
-        body.classList.remove('scend-theme');
-    } else {
-        body.classList.add('scend-theme');
-    }
-}
+//     if (body.classList.contains('scend-theme')) {
+//         body.classList.remove('scend-theme');
+//     } else {
+//         body.classList.add('scend-theme');
+//     }
+// }
