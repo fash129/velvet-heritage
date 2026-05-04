@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <button id="theme-toggle" class="theme-btn hidden-theme" aria-label="Toggle Theme">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </svg>
+    </button>
+
+    <div class="logo-box">
+        <header>
+            <img src="logo.59 AM" width="100px" alt="">
+            <h1>VELVET HERITAGE</h1>
+        </header> 
+
+        <nav class="head">
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about-us.html"><i class="fa-solid fa-user"></i> About Us</a></li>
+                <li><a href="fashion-icon.html"><i class="fa-solid fa-crown"></i> Fashion Iconc</a></li>
+                <li><a href="fashion_eras.html"><i class="fa-solid fa-hourglass-half"></i> Fashion Through Ages</a></li>
+                <li><a href="aura-lifestyle.html"><i class="fa-solid fa-hat-cowboy"></i> Lifestyle</a></li>
+                <li><a href="trend-revival.html"><i class="fa-solid fa-clock-rotate-left"></i> Trends Revival</a></li>
+                <li><a href="contact-us.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li><a href="magazines.html"><i class="fa-solid fa-book"></i>Gallery</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+        <h1 class="contact-title">Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-image"> 
+                <img src="phone2.jpg" alt="phone">
+            </div> 
+            <div class="contact-form">
+                <form class="form-section">
+                  <div id="msg"style="text-align:center; margin-bottom:15px; font-weight:bold; font-size:16px; min-height:24px;"></div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Enter your name"                
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="Phone" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="submit-btn-container">
+                        <button type="button" onclick="validateContact(event)">Contact Us</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="cpy">
+        &copy;2026 Velvet Heritage Magazine. All Rights Reserved.
+    </footer> 
+
+    <footer class="cookies">
+        <ul class="foot">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
