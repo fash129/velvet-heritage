@@ -11,18 +11,8 @@
     --text-muted:    #e0d6cf;
 }
 
-/* ── Light Theme ── */
-[data-theme="light"] {
-    --bg-color:      #edded3;
-    --text-color:    #54392a;
-    --shadow:        #54392a;
-    --border-color:  #54392a;
-    --nav-hover-bg:  #54392a;
-    --nav-hover-txt: #edded3;
-    --footer-border: #c9a98a;
-    --text-accent:   #b05e10;
-    --text-muted:    #5c3d28;
-}
+ /* ── Light Theme ── */
+[data-theme="light"],
 body.light {
     --bg-color:      #edded3;
     --text-color:    #54392a;
@@ -33,7 +23,8 @@ body.light {
     --footer-border: #c9a98a;
     --text-accent:   #b05e10;
     --text-muted:    #5c3d28;
-}
+} 
+
 * {
     box-sizing: border-box;
     margin: 0;
