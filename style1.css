@@ -33,16 +33,16 @@ header{
 
  }
 body.light {
-    background-color:#edded3;
+    background-color:;
 }
 .theme-btn:hover {
-    background-color: #edded3;
-    color: white;
+    background-color:#edded3 ;
+    color:#54392a ;
 }
 
 body.dark {
     background-color:#edded3;
-    color:#54392a ; 
+    color: ; 
 }
 
 body.dark * {
