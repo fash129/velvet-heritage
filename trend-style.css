@@ -1,7 +1,7 @@
 
 body{
     
-    background-color:  #422c2a;
+    background-color:  #54392a;
     color: #edded3;
     margin: 0;
     padding: 0;
@@ -213,7 +213,7 @@ padding-bottom:30px;
     opacity: .5;
 }
 .foot li a:hover{
-    background-color: #321b1d;
+    background-color: #54392a;
     padding: 10px;
     border-radius: 20px;
     opacity: 1;
