@@ -1,5 +1,5 @@
 
-const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleBtn = document.getElementById('theme-switch');
 const currentTheme = localStorage.getItem('theme');
  
   if (currentTheme === 'light') {
