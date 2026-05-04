@@ -32,7 +32,9 @@ header{
     z-index: 1000;
 
  }
-
+body.light {
+    background-color:#edded3;
+}
 .theme-btn:hover {
     background-color: #edded3;
     color: white;
