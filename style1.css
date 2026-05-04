@@ -59,6 +59,12 @@ body.light .era-card {
     border-color:#54392a;
     box-shadow: 0 0 25px 2px  rgb(43, 29, 21);
 }
+body.light h1, 
+body.light h2, 
+body.light p, 
+body.light a {
+    color: #54392a !important;
+}
 
 body.light ul li a:hover {
     background-color:  #321b1d;
