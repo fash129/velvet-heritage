@@ -18,7 +18,7 @@ function signIn (event){
         msg.innerText = "Signed in successfully !";
 
         setTimeout(function () {
-        window.location.href = "Home.html";
+        window.location.href = "index.html";
     }, 2000);
     
     }else{
