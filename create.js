@@ -37,6 +37,6 @@ function createAccount(event){
     msg.innerText = "Account created successfully !";
 
     setTimeout(function () {
-        window.location.href = "sign in.html";
+        window.location.href = "sign-in.html";
     }, 2000);
 }  
